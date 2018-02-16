@@ -77,7 +77,7 @@ class Route {
 
 			}
 		}else{
-			echo "Página não encontrada!";
+			Container::pageNotFound();
 		}
 	}
 }
