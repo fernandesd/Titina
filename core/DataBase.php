@@ -11,7 +11,7 @@ class DataBase
 		$conf = include_once __DIR__ . "/../app/database.php";
 
 		if($conf['driver'] == 'sqlite'){
-			$sqlite = __DIR__ . "/../storage/database" . $conf['sqlite']['host']:
+			$sqlite = __DIR__ . "/../storage/database" . $conf['sqlite']['host'];
 			$sqlite = "sqlite:" . $sqlite;
 			// $charset = $conf['sqlite']['charset'];
 			// $collation = $conf['sqlite']['collation'];

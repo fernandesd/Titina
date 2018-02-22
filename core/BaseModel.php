@@ -6,7 +6,7 @@ use PDO;
 abstract class BaseModel
 {
 	private $pdo;
-	protected table;
+	protected $table;
 
 	public function __construct(PDO $pdo)
 	{
