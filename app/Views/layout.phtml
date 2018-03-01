@@ -3,28 +3,51 @@
 <head>
 	<!--Página desenvolvida por: Diego Fernandes--> 
 	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php $this->getPageTitle('|') ?>Titina Micro Framework</title>
+	<meta name="description" content="Micro-Framework em MVC.">
+	<meta name="keywords" content="Framework, MVC">
+	<meta name="robots" content="index, follow>">
+	<meta name="author" content="Diego Fernandes">
+
 
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 	<link rel="icon" href="/logo.png" type="image/x-icon">
+
 </head>
 <body>
-
-	<input type="checkbox" id="bt_menu">
-	<label for="bt_menu">&#9776;</label>
-
+	<header class="cabecalho"><a href="/">
+		<h1 class="logo">Titina Framework</h1>
+	</a>
+	<button class="bt_menu">&#9776;</button>
 	<nav class="menu">
+		<a href="" class="btn-close">x</a>
 		<ul>
-		<li id="Titina"><img src="/logo.png" class="logoMenu" alt="logotipo Titina Framework">Titina Framework</li>
-		<li><a href="/">Home</a></li>
-		<li><a href="/posts">Posts</a></li>
-	</ul>			
-</nav>
+			<li><a href="/">Home</a></li>
+			<li><a href="/posts">Posts</a></li>
+		</ul>
+	</nav>
 
-	<?php $this->content() ?>
-	
+</header>
+
+<div class="conteudo"><h1>Titina Micro-Framework</h1><br><br><p>Este é um Micro-Framework MVC em PHP, construido como exercício do conteúdo didático do curso "Micro Framework do Zero" disponibilizado no canal TJG Web no Youtube.</p>
+<p>Este curso foi proposto pela Infojr-UFBA como exercício final do processo Trainee 2017.2.</p>
+</div>
+
+<footer class="final"><p></i> Desenvolvido por: Diego Fernandes</p></footer>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+</script>
+  <script>
+  	$("button").click(function(){
+  		$(".menu").show();
+  	});
+  </script>
+
+
 </body>
-<footer><p id="footer">Prozudido por: Diego Fernandes</p></footer>
+
 </html>
 
 

@@ -3,36 +3,50 @@
 <head>
 	<!--Página desenvolvida por: Diego Fernandes--> 
 	<meta charset="UTF-8">	
-	<title>Titina Micro Framework</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Micro-Framework em MVC.">
+	<meta name="keywords" content="Framework, MVC">
+	<meta name="robots" content="index, follow>">
+	<meta name="author" content="Diego Fernandes">
+
 
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 	<link rel="icon" href="/logo.png" type="image/x-icon">
+
 </head>
 <body>
-
-	<input type="checkbox" id="bt_menu">
-	<label for="bt_menu">&#9776;</label>
-
+	<header class="cabecalho"><a href="/">
+		<h1 class="logo">Titina Framework</h1>
+	</a>
+	<button class="bt_menu">&#9776;</button>
 	<nav class="menu">
+		<a href="" class="btn-close">x</a>
 		<ul>
-			<li id="Titina"><img src="/logo.png" class="logoMenu" alt="logotipo Titina Framework">Titina Framework</li>
 			<li><a href="/">Home</a></li>
-		</ul>			
+			</ul>
 	</nav>
 
-	<div class="p404">
-		
-	<h1>Opa, calma aí fera!</h1><br><br>
-	<p>Verifique a URL digitada e tente novamente. <br> Ou volte para o início clicando em Home. </p>
+</header>
 
-	</div>
+<div class="conteudo"><h1>Opa, calma aí fera!</h1><br><br><p>Verifique a URL digitada e tente novamente.</p>
+<p> Ou volte para o início clicando em Home.</p>
+</div>
+
+<footer class="final"><p></i> Desenvolvido por: Diego Fernandes</p></footer>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+</script>
+  <script>
+  	$("button").click(function(){
+  		$(".menu").show();
+  	});
+  </script>
+
 
 </body>
 
 </html>
-
-
-
 
 
 

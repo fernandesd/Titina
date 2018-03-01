@@ -1,189 +1,83 @@
-*{
-	margin: 0;
-	padding: 0;
-	font-family: "Times New Roman";
-	font-size: 15px;
+
+*{box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; font-family: 'Josefin Sans', sans-serif; font-size: 100%;}
+
+body{width: 100%; height: 100%; padding: 0; margin: 0; background-color: #2A2A2A;}
+
+ul{list-style: none;}
+
+a{text-decoration: none;}
+
+img{max-width: 100%;}
+
+.cabecalho{height: 90px; background: linear-gradient(to top, #2A2A2A, #000);width: 100%; float: left; padding: 3% 4%;}
+
+.logo{width: 60px; height:60px; float: left; background:url(../../logo.png) left top/60px no-repeat; font-size: 0;}
+
+.bt_menu{background-color: rgba(255, 255, 255, 0.1); color: #fff; border-radius: 50%;  float: right;cursor: pointer;margin: 4.4%;}
+
+.menu{display:none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.9);}
+
+.btn-close {font-size: 2em; color: #fff; float: right; cursor: pointer; margin-top: 4.5%; margin-right: 10%;}
+
+.menu ul{width: 100%; float: left; text-align: center;}
+
+.menu li {padding: 2.5%;}
+
+.menu li a {font-size: 2em; color: #fff; padding: 1.5% 3%;}
+
+.menu li a:hover{background-color: #D54114; border-radius: 20%;}
+
+
+.conteudo {border:solid 1px #00ACCD;color: 
+	#fff;display: inline-block;margin: 10% 2% 0 2%; padding: 5%; width: 96%; align-content: center;}
+
+.conteudo h1 {text-align: center;}
+
+.conteudo p{text-align: justify;}
+
+.final {height: 90px; background: linear-gradient(to top, #2A2A2A, #000);width: 100%; float: left; padding: 3% 4%; display: inline-block;margin-top: 12%; color: #444;border-radius: 5px;}
+
+.final p{
+	padding: 5%; text-align: center; 
 }
 
-body{
-	background-color: #292727;
-	color: #fff;
-	max-width: 1500px;
-}
+@media (min-width: 375px) {
 
-
-h2{
-	font-size: 30px;
-}
-
-p{
-	font-size: 20px;
-}
-
-footer{
-	width: 1500px;
-	height: 40px;
-	background-color: #222;
-	position: relative;
-	top: 182px;
-	text-align: center;
+	.final {height: 70px; margin-top: 25%; padding: 1px;}
+	.conteudo{margin-top: 15%;}
 
 }
 
-#footer{
-	position: relative;
-	top:12px;
-	color: #636060;
+@media (min-width: 600px) {
+
+	.logo{font-size: 1.5em; width: 50%; padding-left: 10%; padding-top: 2%; color: #fff;}
+	.final {height: 70px; margin-top: 30%;}
+		.menu li a {font-size: 1.7em; color: #fff; padding: 1.5% 3%;}
+		.conteudo{margin-top: 25%;}
+
 }
 
-.row{
-	margin:20px;
-}
 
-.presentation{
-	position: relative;
-	left: 25%;
-	top: 80px;
-	text-align: center;
-	width: 800px;
-	height: 200px;
-	border: dashed 1px #fff;
-	padding: 15px;
-}
+@media (min-width: 1024px) {
 
-.p404{
-	position: relative;
-	left: 25%;
-	top: 80px;
-	text-align: center;
-	width: 800px;
-	height: 200px;
-	border: dashed 1px #fff;
-	padding: 15px;
-}
+	.final {height: 90px; margin-top: 10%; padding: 0;}
+	.final p{padding: 2%; text-align: center; }
+	.conteudo{margin-top: 5%;}
+	.cabecalho{padding: 0;}
+	.logo{padding-left: 5%;}
+	.btn_menu{display: none;}
+	button{display: none;}
+	.btn-close{display: none;}
+.menu {width: auto; height: 60px; line-height: 60px; float: right; display: block; position: static;background-color: rgba(56,56,56,0.1); border-radius: 30%;}
+	.menu ul{background-color: rgba(56,56,56,0.1); height: 60px; border-radius: 30%;}
+		.menu li{padding: 0; float: left; height: 60px; border-radius: 50%;}
+		.menu li a{ padding: 25px; }
+		.conteudo h1 {font-size: 2em;}
 
-.p404 h1{
-	position: relative;
-	font-size: 30px;
-	top:60px;
-}
-.p404 p{
-	position: relative;
-	font-size: 20px;
-	top:60px;
-}
 
-.resume{
-	text-align: justify;
-	top: 20px;
-	position: relative;
-}
-
-#home{
-	font-size: 30px;
-	font-family: "Arial";
-	margin-bottom: 20px;
-	position: relative;
-	top: 40px;
-	left: 80px;
-}
-
-.menu{
-	
-	width: 1500px;
-	height: 70PX;
-	background-color: #222;
-}
-
-#Titina{
-	position: relative;
-	top:25px;
-	font-size: 20px;
-}
-
-.menu ul{
-	list-style: none;
-	position: relative;
-	margin-left: 30px;
 
 
 }
 
-.menu ul li{
-	float: left;
-	text-align: center;
 
-}
 
-.menu a{
-	position: relative;
-	padding: 15px;
-	display: block;
-	text-decoration: none;
-	background-color: #222;
-	color: #fff;
-	font-size: 15px;	
-	width: 100px;
-	height: 20px;
-	text-align: center;
-	top: 12px;
-	left: 20px;	
-}
-
-.menu a:hover{
-	background-color: #fff;
-	color: #222;
-	border: solid 2px;
-}
-
-.logoMenu{
-	position: relative;
-	display: flex;
-	float: left;
-	width: 50px;
-	height: 50px;
-	left: 5px;
-	top: -17px;
-}
-
-label[for="bt_menu"]{
-	padding: 5px;
-	background-color: #222;
-	color: #fff;
-	text-align: center;
-	font-size: 30px;
-	cursor: pointer;
-	width: 50px;
-	height: 50px;
-}
-
-#bt_menu{
-	display: none;
-}
-
-label[for="bt_menu"]{
-	display: none;
-}
-
-@media(max-width: 800px){
-	label[for="bt_menu"]{
-		display: block;
-		border-radius: 40%;
-		height: 40px;
-	}
-
-	#bt_menu:checked ~ .menu{
-		margin-left: 0;
-	}
-
-	.menu{
-		margin-top: 5px;
-		margin-left: -100%;
-		transition: all .4s;
-	}
-
-	.menu ul li{
-		width: 100%;
-		float: none;
-	}
-}
